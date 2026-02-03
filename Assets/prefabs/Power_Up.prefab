@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4673550992389270821}
   - component: {fileID: 8056095702518290148}
   - component: {fileID: 6894160265759343785}
+  - component: {fileID: -5377735921886793551}
   m_Layer: 8
   m_Name: Power_Up
   m_TagString: Untagged
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-5377735921886793551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166673009485731673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537574e63e9788342a8e250b52c6c691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerPellet

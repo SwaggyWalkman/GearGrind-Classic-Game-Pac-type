@@ -2,104 +2,148 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject [] Rivals; // Equivalent to the ghosts array in the video
-    // in the video, GameObject[] Rivals(ghost in the video) was instead put as Ghosts[] ghosts;
-    // I kept it as GameObject[] because doing it like the video cause an error I did not understand how to fix
-    // at the moment, everything else seems to be working fine.
+    [Header("Scene References")]
+    public GameObject Player;     // The player character
+    public Transform Pellets;     // Parent object containing all pellet children
 
-    public GameObject Player;
-    public Transform powers;
+    [Header("Game Stats")]
+    public int Lives { get; private set; }
+    public int Score { get; private set; }
 
-    public int score {get; private set;}
-    public int lives {get; private set;}
-     
-    
-    
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         NewGame();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        //if case if any key is pressed to start a new game after game over
-        //left it as just space for now
-        if (this.lives <= 0 && Input.GetKeyDown(KeyCode.Space))    
+        // Restart when out of lives
+        if (Lives <= 0 && Input.GetKeyDown(KeyCode.Space))
         {
             NewGame();
         }
     }
 
-    
+    // ------------------------------
+    // GAME FLOW
+    // ------------------------------
+
     private void NewGame()
     {
         SetScore(0);
         SetLives(3);
+        NewRound();
     }
 
     private void NewRound()
     {
-        foreach (Transform power in this.powers)
+        if (Pellets == null)
         {
-            power.gameObject.SetActive(true);
+            Debug.LogError("❌ Pellets Transform not assigned in GameManager!");
+            return;
+        }
+
+        // Reactivate all pellets (make them visible again)
+        foreach (Transform pellet in Pellets)
+        {
+            pellet.gameObject.SetActive(true);
         }
 
         ResetState();
-        
     }
 
     private void GameOver()
     {
-        for (int i = 0; i < this.Rivals.Length; i++)
-        {
-            this.Rivals[i].gameObject.SetActive(true);
-        }
-
-        this.Player.gameObject.SetActive(false);
+        Player.gameObject.SetActive(false);
     }
 
     private void ResetState()
     {
-        for (int i = 0; i < this.Rivals.Length; i++)
-        {
-            this.Rivals[i].gameObject.SetActive(true);
-        }
-
-        this.Player.gameObject.SetActive(true);
+        Player.SetActive(true);
     }
 
-    private void SetScore(int score)
+    // ------------------------------
+    // SCORING & LIVES
+    // ------------------------------
+
+    private void SetScore(int value)
     {
-        this.score = score;
+        Score = value;
+        Debug.Log("Score: " + Score);
     }
 
-    private void SetLives(int lives)
+    private void SetLives(int value)
     {
-        this.lives = lives;
+        Lives = value;
+        Debug.Log("Lives: " + Lives);
     }
 
-    public void RivalEaten(GameObject rivals)
-    {
-        SetScore(this.score + 200); // Assuming each rival is worth 200 points
-        rivals.SetActive(false);
-    }
+    // ------------------------------
+    // EVENTS
+    // ------------------------------
 
     public void PlayerEaten()
     {
-        this.Player.gameObject.SetActive(false);
-        SetLives(this.lives - 1);
+        Player.SetActive(false);
+        SetLives(Lives - 1);
 
-        if (this.lives > 0)// checks lives
+        if (Lives > 0)
         {
-            
-            Invoke(nameof(ResetState), 3.0f); // doesn't reset everything, just the rivals and player, also resets after a couple of seconds
+            Invoke(nameof(ResetState), 3.0f);
         }
         else
         {
             GameOver();
         }
+    }
+
+    public void PelletEaten(Pellet pellet)
+    {
+        pellet.gameObject.SetActive(false);
+        SetScore(Score + pellet.points);
+
+        int remaining = CountActivePellets();
+
+        Debug.Log("🍬 Pellet eaten! Pellets left: " + remaining);
+
+        if (remaining == 0)
+        {
+            Debug.Log("✅ All pellets eaten! Starting new round...");
+            Player.SetActive(false);
+            Invoke(nameof(NewRound), 3.0f);
+        }
+    }
+
+    public void PowerPelletEaten(PowerPellet pellet)
+    {
+        PelletEaten(pellet);  // Gains normal pellet points too
+        Debug.Log("💥 Power Pellet eaten!");
+        // Add power-up effects here (if you add ghosts later)
+    }
+
+    // ------------------------------
+    // HELPER METHODS
+    // ------------------------------
+
+    private int CountActivePellets()
+    {
+        if (Pellets == null)
+        {
+            Debug.LogError("❌ Pellets Transform not assigned in GameManager!");
+            return 0;
+        }
+
+        int count = 0;
+
+        // Search all child transforms (including nested)
+        foreach (Transform child in Pellets.GetComponentsInChildren<Transform>(includeInactive: false))
+        {
+            if (child != Pellets && child.gameObject.activeSelf)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
