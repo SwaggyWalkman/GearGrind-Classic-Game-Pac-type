@@ -30,6 +30,12 @@ public class Player : MonoBehaviour
         if (direction != Vector2.zero)
         {
             this.movement.SetDirection(direction);
-        }
+        } 
+    }
+    public void ResetState()
+    {
+        this.gameObject.SetActive(true);
+        this.movement.ResetState();
     }
 }
+

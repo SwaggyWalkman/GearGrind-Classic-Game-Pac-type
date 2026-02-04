@@ -59,5 +59,70 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1969569592341756768, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8322014830127156533}
+    - targetCorrespondingSourceObject: {fileID: 1969569592341756768, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3784505609071696373}
+    - targetCorrespondingSourceObject: {fileID: 1969569592341756768, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4703196067181829626}
+    - targetCorrespondingSourceObject: {fileID: 1969569592341756768, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5317781145696877097}
   m_SourcePrefab: {fileID: 100100000, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+--- !u!1 &7148154334781699084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1969569592341756768, guid: 73dfd93745d1c0649b7776d59b78d4b4, type: 3}
+  m_PrefabInstance: {fileID: 8675632062975446892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8322014830127156533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148154334781699084}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0793a6a0d94a9458159f7357c72e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RivalBehavior
+--- !u!114 &3784505609071696373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148154334781699084}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cfbf9392fd2482468681af3d0fdba19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RivalScatter
+--- !u!114 &4703196067181829626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148154334781699084}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db39a5966c5810d47ac4fe8394c0b5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RivalChase
+--- !u!114 &5317781145696877097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148154334781699084}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc4264af3b6de643b7a36a77e7b7e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RivalFrightened

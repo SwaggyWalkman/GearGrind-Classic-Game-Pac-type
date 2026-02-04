@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
         ResetState();
     }
-
+    //All my changes for the hour 2 mark happened here, where I changes some components of the Reset State.
     private void GameOver()
     {
         Player.gameObject.SetActive(false);
@@ -59,7 +59,14 @@ public class GameManager : MonoBehaviour
 
     private void ResetState()
     {
-        Player.SetActive(true);
+        ResetRivalMultiplier();
+
+        for (int i = 0; i <this.rival.Length; i++)
+        {
+            this.rivals[i].ResetState();
+        }
+
+        this.Player.ResetState();
     }
 
     // ------------------------------
@@ -81,6 +88,14 @@ public class GameManager : MonoBehaviour
     // ------------------------------
     // EVENTS
     // ------------------------------
+
+    //I added a Rival Eaten method here, although I'm not sure if it's fully correct.
+    public void RivalEaten(Rival rival)
+    {
+        int pointsEarned = rival.points * this.rivalMultiplier;
+        SetScore(Score + pointsEarned);
+        this.rivalMultiplier++;
+    }
 
     public void PlayerEaten()
     {
