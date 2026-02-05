@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Rival : MonoBehaviour
 {
+ 
+
     public Movement movement { get; private set; }
 
     public RivalHome home { get; private set; }
