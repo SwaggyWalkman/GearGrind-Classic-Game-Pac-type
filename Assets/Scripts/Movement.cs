@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        resetState();
+        ResetState();
     }
 
     // Update is called once per frame
@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour
         this.startingPosition = this.transform.position;
     }
 
-    public void resetState()
+    public void ResetState()
     {
         this.speedMultiplier = 1.0f;
         this.direction = this.initialDirection;

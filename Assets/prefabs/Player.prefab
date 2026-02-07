@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6613300562119607408}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,3 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd60d133b2e93e149918e3ceb3f4dbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
+  speed: 8
+  speedMultiplier: 1
+  initialDirection: {x: 0, y: 0}
+  WallsLayer:
+    serializedVersion: 2
+    m_Bits: 0

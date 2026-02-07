@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8718351951156654353}
   - component: {fileID: 7335182961364847978}
+  - component: {fileID: 8284480081056573255}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -78,3 +79,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &8284480081056573255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5425043508726985064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf22e010113085148b316410ef4ebf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Node
+  WallsLayer:
+    serializedVersion: 2
+    m_Bits: 512
