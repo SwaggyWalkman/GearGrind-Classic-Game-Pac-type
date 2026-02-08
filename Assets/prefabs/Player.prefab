@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8437392974931709003}
   - component: {fileID: 4684316287970811477}
   - component: {fileID: 6613300562119607408}
+  - component: {fileID: 5028222170030435615}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -186,7 +187,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   speed: 8
   speedMultiplier: 1
-  initialDirection: {x: 0, y: 0}
+  initialDirection: {x: 1, y: 0}
   WallsLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+--- !u!114 &5028222170030435615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348535007744244627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37deb8b0f2dc6e5498f490cf418e1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player

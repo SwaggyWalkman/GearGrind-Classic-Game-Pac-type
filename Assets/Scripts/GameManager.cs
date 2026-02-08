@@ -91,7 +91,15 @@ public class GameManager : MonoBehaviour
     {
         int points = Rivals.points * rivalMultiplier;
         SetScore(this.score + points); // Assuming each rival is worth 200 points
-        Rivals.gameObject.SetActive(false);
+        Rivals.SetPosition(Rivals.home.homeTransform.position);
+
+        // Disable all behaviors except home
+        Rivals.scatter.Disable();
+        Rivals.chase.Disable();
+        Rivals.vulnerable.Disable();
+
+        // Enable home behavior (this triggers ExitTransition)
+        Rivals.home.Enable(3.0f);
     }
 
     public void PlayerEaten()
@@ -124,6 +132,11 @@ public class GameManager : MonoBehaviour
     public void PowerPelletEaten(PowerPellet powerPellet)
     {
         // TODO: changing ghost state
+        for (int i = 0; i < this.Rivals.Length; i++)
+        {
+            this.Rivals[i].vulnerable.Enable(powerPellet.duration);
+        }
+
         // resets rival multiplier after 10 seconds
         PelletEaten(powerPellet); // calls pellet eaten to add points and hide the power pellet
         CancelInvoke();

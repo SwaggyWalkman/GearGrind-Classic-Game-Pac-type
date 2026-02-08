@@ -19,9 +19,10 @@ public class RivalChase : RivalBehavior
 
             foreach(Vector2 availableDirection in node.availableDirections)
             {
+                                
                 if (availableDirection == -rivals.movement.direction && node.availableDirections.Count > 1)
                 {
-                continue;
+                    continue;
                 }
                 
                 Vector3 newPosition = transform.position + new Vector3(availableDirection.x, availableDirection.y);

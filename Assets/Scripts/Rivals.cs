@@ -9,6 +9,7 @@ public class Rivals : MonoBehaviour
     public RivalVulnerable vulnerable { get; private set; }
     public RivalBehavior initialBehavior;
     public Transform target;
+    
 
 
     public int points = 200;
@@ -51,6 +52,14 @@ public class Rivals : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetPosition(Vector3 position)
+    {
+        position.z = transform.position.z;
+        transform.position = position;
+
+        movement.ResetState();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

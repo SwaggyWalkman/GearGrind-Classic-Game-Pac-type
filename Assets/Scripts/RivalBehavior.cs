@@ -7,10 +7,9 @@ public abstract class RivalBehavior : MonoBehaviour
     public Rivals rivals { get; private set; } // reference to the parent Rivals script, which will be used to access the rival's state and other properties
     public float duration; // duration for which the behavior is active, can be set in the inspector or through code
 
-    private void OnEnable()
+    private void Awake()
     {
-        rivals = GetComponent<Rivals>(); // get the Rivals component from the same GameObject
-        
+        rivals = GetComponent<Rivals>();
     }
 
     public void Enable()
