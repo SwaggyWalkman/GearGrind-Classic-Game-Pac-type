@@ -2,17 +2,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject [] Rivals; // Equivalent to the ghosts array in the video
+    public Rivals [] Rivals; // Equivalent to the ghosts array in the video
     // in the video, GameObject[] Rivals(ghost in the video) was instead put as Ghosts[] ghosts;
     // I kept it as GameObject[] because doing it like the video cause an error I did not understand how to fix
     // at the moment, everything else seems to be working fine.
 
-    public GameObject Player;
-    public Transform powers;
+    public Player Player;
+    
+    [SerializeField] private Transform powers; // pellet equivalent
+
+    public int rivalMultiplier {get; private set;} = 1;
 
     public int score {get; private set;}
     public int lives {get; private set;}
-     
+    
     
     
     
@@ -29,7 +32,7 @@ public class GameManager : MonoBehaviour
         //left it as just space for now
         if (this.lives <= 0 && Input.GetKeyDown(KeyCode.Space))    
         {
-            NewGame();
+            NewRound();
         }
     }
 
@@ -42,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     private void NewRound()
     {
-        foreach (Transform power in this.powers)
+        foreach (Transform power in powers)
         {
             power.gameObject.SetActive(true);
         }
@@ -55,20 +58,23 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < this.Rivals.Length; i++)
         {
-            this.Rivals[i].gameObject.SetActive(true);
+            this.Rivals[i].gameObject.SetActive(false);
         }
 
         this.Player.gameObject.SetActive(false);
+        
     }
 
     private void ResetState()
     {
+        resetRivalMultiplier();
+        
         for (int i = 0; i < this.Rivals.Length; i++)
         {
-            this.Rivals[i].gameObject.SetActive(true);
+            this.Rivals[i].ResetState();
         }
 
-        this.Player.gameObject.SetActive(true);
+        this.Player.ResetState();
     }
 
     private void SetScore(int score)
@@ -81,10 +87,19 @@ public class GameManager : MonoBehaviour
         this.lives = lives;
     }
 
-    public void RivalEaten(GameObject rivals)
+    public void RivalEaten(Rivals Rivals)
     {
-        SetScore(this.score + 200); // Assuming each rival is worth 200 points
-        rivals.SetActive(false);
+        int points = Rivals.points * rivalMultiplier;
+        SetScore(this.score + points); // Assuming each rival is worth 200 points
+        Rivals.SetPosition(Rivals.home.homeTransform.position);
+
+        // Disable all behaviors except home
+        Rivals.scatter.Disable();
+        Rivals.chase.Disable();
+        Rivals.vulnerable.Disable();
+
+        // Enable home behavior (this triggers ExitTransition)
+        Rivals.home.Enable(3.0f);
     }
 
     public void PlayerEaten()
@@ -102,4 +117,50 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
     }
+
+    public void PelletEaten(Pellet pellet)
+    {
+        pellet.gameObject.SetActive(false);
+        SetScore(this.score + pellet.points);
+        if (!PelletsLeft())
+        {
+            this.Player.gameObject.SetActive(false);
+            Invoke(nameof(NewRound), 3.0f);
+        }
+    }
+
+    public void PowerPelletEaten(PowerPellet powerPellet)
+    {
+        // TODO: changing ghost state
+        for (int i = 0; i < this.Rivals.Length; i++)
+        {
+            this.Rivals[i].vulnerable.Enable(powerPellet.duration);
+        }
+
+        // resets rival multiplier after 10 seconds
+        PelletEaten(powerPellet); // calls pellet eaten to add points and hide the power pellet
+        CancelInvoke();
+        Invoke(nameof(resetRivalMultiplier), powerPellet.duration); //video calls pellet, not power pellet, going to test it first
+
+    }
+
+    private bool PelletsLeft()
+    {
+        foreach (Transform power in this.powers)
+        {
+            if (power.gameObject.activeSelf)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    
+    private void resetRivalMultiplier()
+    {
+        rivalMultiplier = 1;
+    }
+
+    
 }
