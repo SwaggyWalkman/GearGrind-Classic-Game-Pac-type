@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: cd30d60c6170bb74799c7994a1c260a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3685107704017422567
+    second: Dungeon_knights_1_1_0
+  - first:
+      213: 5586194592270784289
+    second: Dungeon_knights_1_1_1
+  - first:
+      213: 5637540495367134181
+    second: Dungeon_knights_1_1_2
+  - first:
+      213: -1714942446189016449
+    second: Dungeon_knights_1_1_3
+  - first:
+      213: -8373645031019559201
+    second: Dungeon_knights_1_1_4
+  - first:
+      213: -6942475973345660887
+    second: Dungeon_knights_1_1_5
+  - first:
+      213: 7955751713333942143
+    second: Dungeon_knights_1_1_6
+  - first:
+      213: 744771224176289408
+    second: Dungeon_knights_1_1_7
+  - first:
+      213: 535988032072594305
+    second: Dungeon_knights_1_1_8
+  - first:
+      213: -6476338862619548671
+    second: Dungeon_knights_1_1_9
+  - first:
+      213: -7845899115231196967
+    second: Dungeon_knights_1_1_10
+  - first:
+      213: 764942366585079643
+    second: Dungeon_knights_1_1_11
+  - first:
+      213: -5994582280067106514
+    second: Dungeon_knights_1_1_12
+  - first:
+      213: -8070827212146071385
+    second: Dungeon_knights_1_1_13
+  - first:
+      213: 1042615012811005206
+    second: Dungeon_knights_1_1_14
+  - first:
+      213: -5404743405268632435
+    second: Dungeon_knights_1_1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 1711
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e88309aee1242330800000000000000
+      internalID: 3685107704017422567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 762
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127128e7266268d40800000000000000
+      internalID: 5586194592270784289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 671
+        width: 157
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebdc3926319c3e40800000000000000
+      internalID: 5637540495367134181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 207
+        width: 202
+        height: 643
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a0aac6eec4338e0800000000000000
+      internalID: -1714942446189016449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_4
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 689
+        width: 177
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd64dd2b536dacb80800000000000000
+      internalID: -8373645031019559201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_5
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 704
+        width: 168
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9203c0392ee57af90800000000000000
+      internalID: -6942475973345660887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_6
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 694
+        width: 165
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77997a2802886e60800000000000000
+      internalID: 7955751713333942143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_7
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 144
+        width: 283
+        height: 825
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086e5ff7b75f55a00800000000000000
+      internalID: 744771224176289408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 649
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1833c8f7646307700800000000000000
+      internalID: 535988032072594305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 170
+        width: 311
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10421881e1c6f16a0800000000000000
+      internalID: -6476338862619548671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_10
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 223
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8c715f254cd1390800000000000000
+      internalID: -7845899115231196967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_11
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 121
+        width: 165
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5743f1970f9d9a00800000000000000
+      internalID: 764942366585079643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_12
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 231
+        width: 144
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29bfbb4d27fecca0800000000000000
+      internalID: -5994582280067106514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_13
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 214
+        width: 141
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a82a706969aeff80800000000000000
+      internalID: -8070827212146071385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_14
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 229
+        width: 185
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61dd61484dc187e00800000000000000
+      internalID: 1042615012811005206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_knights_1_1_15
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 45
+        width: 151
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cf3da228e7ef4b0800000000000000
+      internalID: -5404743405268632435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aa0958ae9b1891345afcc29ce5da1c64
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dungeon_knights_1_1_0: 3685107704017422567
+      Dungeon_knights_1_1_1: 5586194592270784289
+      Dungeon_knights_1_1_10: -7845899115231196967
+      Dungeon_knights_1_1_11: 764942366585079643
+      Dungeon_knights_1_1_12: -5994582280067106514
+      Dungeon_knights_1_1_13: -8070827212146071385
+      Dungeon_knights_1_1_14: 1042615012811005206
+      Dungeon_knights_1_1_15: -5404743405268632435
+      Dungeon_knights_1_1_2: 5637540495367134181
+      Dungeon_knights_1_1_3: -1714942446189016449
+      Dungeon_knights_1_1_4: -8373645031019559201
+      Dungeon_knights_1_1_5: -6942475973345660887
+      Dungeon_knights_1_1_6: 7955751713333942143
+      Dungeon_knights_1_1_7: 744771224176289408
+      Dungeon_knights_1_1_8: 535988032072594305
+      Dungeon_knights_1_1_9: -6476338862619548671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

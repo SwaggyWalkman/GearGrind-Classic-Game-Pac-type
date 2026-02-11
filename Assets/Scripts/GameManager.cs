@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,21 +9,26 @@ public class GameManager : MonoBehaviour
     // at the moment, everything else seems to be working fine.
 
     public Player Player;
-    
+    public GameObject winScreen_UI;
+    public GameObject loseScreen_UI;
+
     [SerializeField] private Transform powers; // pellet equivalent
 
     public int rivalMultiplier {get; private set;} = 1;
 
     public int score {get; private set;}
     public int lives {get; private set;}
-    
-    
-    
-    
+    private bool isGameOver = false;
+
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         NewGame();
+        winScreen_UI.SetActive(false);
+        loseScreen_UI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -62,7 +68,7 @@ public class GameManager : MonoBehaviour
         }
 
         this.Player.gameObject.SetActive(false);
-        
+        isGameOver = true;
     }
 
     private void ResetState()
@@ -162,5 +168,39 @@ public class GameManager : MonoBehaviour
         rivalMultiplier = 1;
     }
 
-    
+    public void LoseScreen()
+    {
+        if (isGameOver)
+        {
+            loseScreen_UI.SetActive(true);
+            Time.timeScale = 0f;
+            AudioListener.pause = true;
+        }
+    }
+
+    public void WinScreen()
+    {
+        if (!PelletsLeft())
+        {
+            winScreen_UI.SetActive(true);
+            Time.timeScale = 0f;
+            AudioListener.pause = true;
+        }
+    }
+
+    public void PlayAgainButton()
+    {
+        Time.timeScale = 1f;
+        loseScreen_UI.SetActive(false);
+        winScreen_UI.SetActive(false);
+        NewGame();
+        AudioListener.pause = false;
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu_UI");
+        AudioListener.pause = false;
+    }
 }
