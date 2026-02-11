@@ -1407,6 +1407,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f53407d86f9dba94da4ab4e8ba557a94, type: 3}
+--- !u!114 &707776431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9056832418127778254, guid: f53407d86f9dba94da4ab4e8ba557a94, type: 3}
+  m_PrefabInstance: {fileID: 663497597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35231ea925608745940ea6c80ac2acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rivals
+--- !u!114 &722515519 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1014932122621339951, guid: bdefc6b95a38f0a478ef24ea4736e7ee, type: 3}
+  m_PrefabInstance: {fileID: 1492612490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35231ea925608745940ea6c80ac2acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rivals
 --- !u!1 &866868410 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8348535007744244627, guid: 417b8b3debe88454dba56faa772cd361, type: 3}
@@ -10209,6 +10231,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597492012}
   m_CullTransparentMesh: 1
+--- !u!114 &1684234686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7471544489878473602, guid: f9639a0149d696c478ff5a07c5c00c43, type: 3}
+  m_PrefabInstance: {fileID: 1692656250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35231ea925608745940ea6c80ac2acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rivals
 --- !u!1001 &1692656250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10346,6 +10379,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9639a0149d696c478ff5a07c5c00c43, type: 3}
+--- !u!114 &1815018514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2162708193854030718, guid: 0c24c6fb50fa4344c9d79036dbff9ba4, type: 3}
+  m_PrefabInstance: {fileID: 2118091447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35231ea925608745940ea6c80ac2acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rivals
 --- !u!1 &1821731549
 GameObject:
   m_ObjectHideFlags: 0
@@ -10703,19 +10747,19 @@ PrefabInstance:
     - target: {fileID: 1105832851208646445, guid: 8f91dc894249b0845b8be8d63181ae81, type: 3}
       propertyPath: 'Rivals.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1815018514}
     - target: {fileID: 1105832851208646445, guid: 8f91dc894249b0845b8be8d63181ae81, type: 3}
       propertyPath: 'Rivals.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684234686}
     - target: {fileID: 1105832851208646445, guid: 8f91dc894249b0845b8be8d63181ae81, type: 3}
       propertyPath: 'Rivals.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 707776431}
     - target: {fileID: 1105832851208646445, guid: 8f91dc894249b0845b8be8d63181ae81, type: 3}
       propertyPath: 'Rivals.Array.data[3]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 722515519}
     - target: {fileID: 2015265252221425342, guid: 8f91dc894249b0845b8be8d63181ae81, type: 3}
       propertyPath: m_Name
       value: GameManager
