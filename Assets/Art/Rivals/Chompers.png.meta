@@ -108,10 +108,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: Chompers_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 16
         y: 0
-        width: 33
-        height: 15
+        width: 15
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,11 +146,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Chompers_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6769f26c205f37a4e89dd283efd3c2fb
+      internalID: -415337052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chompers_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158dd317c63fb7749b94b5dccc5ad2bb
+      internalID: 1630219768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4b71ee0be39490a41bad08ca853f5a3c
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +206,8 @@ TextureImporter:
     nameFileIdTable:
       Chompers_0: 8027832879318575912
       Chompers_1: 7294317180333001516
+      Chompers_2: -415337052
+      Chompers_3: 1630219768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
