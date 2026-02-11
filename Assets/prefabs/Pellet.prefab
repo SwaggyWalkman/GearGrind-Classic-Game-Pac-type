@@ -150,3 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9428770db30583d499aba4c6a5daa731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pellet
+  points: 10
