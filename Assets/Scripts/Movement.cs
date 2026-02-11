@@ -13,11 +13,12 @@ public class Movement : MonoBehaviour
     public Vector2 nextDirection { get; private set;} //you can queue up movements in the arcade game, so let's replicate that here
 
     public Vector3 startingPosition { get; private set;}
-     
-    
-    
-    
+
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [System.Obsolete]
     void Start()
     {
         ResetState();
@@ -65,6 +66,7 @@ public class Movement : MonoBehaviour
         this.startingPosition = this.transform.position;
     }
 
+    [System.Obsolete]
     public void ResetState()
     {
         this.speedMultiplier = 1.0f;

@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
         this.transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
     }
 
+    [System.Obsolete]
     public void ResetState()
     {
         this.movement.ResetState();
