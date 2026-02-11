@@ -196,6 +196,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Clawstrike_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c814a8d645ddf4d99884328c5aee20
+      internalID: -3132227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clawstrike_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b579560690441bf4a85a77612ca9e9fd
+      internalID: 824618566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -214,6 +258,8 @@ TextureImporter:
       Clawstrike_1: 5073698129242555455
       Clawstrike_2: -3324736884468821240
       Clawstrike_3: 7535505671790466183
+      Clawstrike_4: -3132227
+      Clawstrike_5: 824618566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
