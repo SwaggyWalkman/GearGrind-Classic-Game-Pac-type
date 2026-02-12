@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public Player Player;
     public GameObject winScreen_UI;
     public GameObject loseScreen_UI;
+    public TextMeshProUGUI scoreText;
+     public TextMeshProUGUI livesText;
 
     [SerializeField] private Transform powers; // pellet equivalent
 
@@ -29,6 +32,8 @@ public class GameManager : MonoBehaviour
         NewGame();
         winScreen_UI.SetActive(false);
         loseScreen_UI.SetActive(false);
+        UpdateScoreUI();
+        UpdateLivesUI();
     }
 
     // Update is called once per frame
@@ -91,11 +96,13 @@ public class GameManager : MonoBehaviour
     private void SetScore(int score)
     {
         this.score = score;
+        UpdateScoreUI();
     }
 
     private void SetLives(int lives)
     {
         this.lives = lives;
+        UpdateLivesUI();
     }
 
     public void RivalEaten(Rivals Rivals)
@@ -204,6 +211,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         loseScreen_UI.SetActive(false);
         winScreen_UI.SetActive(false);
+        NewGame();
         NewRound();
         AudioListener.pause = false;
     }
@@ -215,4 +223,16 @@ public class GameManager : MonoBehaviour
         AudioListener.pause = false;
     }
 
+    private void UpdateScoreUI()
+    {
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    private void UpdateLivesUI()
+    {
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + lives.ToString();
+        }
+    }
 }
