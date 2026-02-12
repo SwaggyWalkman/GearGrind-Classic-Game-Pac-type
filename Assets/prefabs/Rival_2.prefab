@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 560258829219422718, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 560258829219422718, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1345339167637127397, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: m_Name
       value: Rival_2
@@ -80,6 +88,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3154341391218673213, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154341391218673213, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3365024073909072842, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -91,6 +107,34 @@ PrefabInstance:
     - target: {fileID: 3365024073909072842, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: m_AngularDamping
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383297230684843560, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3324736884468821240, guid: 81224c56409ea4d489e00c47a07ed15a, type: 3}
+    - target: {fileID: 3383297230684843560, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383297230684843560, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943983124106206906, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3132227, guid: 81224c56409ea4d489e00c47a07ed15a, type: 3}
+    - target: {fileID: 3943983124106206906, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943983124106206906, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943983124106206906, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4175675952661870977, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: duration
@@ -113,8 +157,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5417781719919956273}
     - target: {fileID: 4186072141351410710, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8923240495313928336, guid: 81224c56409ea4d489e00c47a07ed15a, type: 3}
+    - target: {fileID: 4186072141351410710, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: m_Color.b
-      value: 0.9091797
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186072141351410710, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536465394387217188, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536465394387217188, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5743090316599911849, guid: 5552c79b24ba0254e9abf7910be00977, type: 3}
       propertyPath: m_Enabled

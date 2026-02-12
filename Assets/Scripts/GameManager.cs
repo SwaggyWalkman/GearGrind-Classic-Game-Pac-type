@@ -62,13 +62,18 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        for (int i = 0; i < this.Rivals.Length; i++)
-        {
-            this.Rivals[i].gameObject.SetActive(false);
-        }
+            for (int i = 0; i < this.Rivals.Length; i++)
+            {
+                this.Rivals[i].gameObject.SetActive(false);
+            }
 
-        this.Player.gameObject.SetActive(false);
-        isGameOver = true;
+            this.Player.gameObject.SetActive(false);
+
+            isGameOver = true;
+
+            loseScreen_UI.SetActive(true);
+            Time.timeScale = 0f;
+            AudioListener.pause = true;
     }
 
     private void ResetState()
@@ -130,8 +135,7 @@ public class GameManager : MonoBehaviour
         SetScore(this.score + pellet.points);
         if (!PelletsLeft())
         {
-            this.Player.gameObject.SetActive(false);
-            Invoke(nameof(NewRound), 3.0f);
+            WinScreen();
         }
     }
 
@@ -182,6 +186,13 @@ public class GameManager : MonoBehaviour
     {
         if (!PelletsLeft())
         {
+            for (int i = 0; i < this.Rivals.Length; i++)
+            {
+                this.Rivals[i].gameObject.SetActive(false);
+            }
+
+            this.Player.gameObject.SetActive(false);
+
             winScreen_UI.SetActive(true);
             Time.timeScale = 0f;
             AudioListener.pause = true;
@@ -193,7 +204,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         loseScreen_UI.SetActive(false);
         winScreen_UI.SetActive(false);
-        NewGame();
+        NewRound();
         AudioListener.pause = false;
     }
 
@@ -203,4 +214,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu_UI");
         AudioListener.pause = false;
     }
+
 }
